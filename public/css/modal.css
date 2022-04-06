@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.cta {
+    margin:auto;
+    background-color: royalblue;
+    color: white;
+    text-decoration: none;
+    padding: 1.2em 3em;
+    border-radius: .4em;
+    -webkit-border-radius: .4em;
+    -moz-border-radius: .4em;
+    -ms-border-radius: .4em;
+    -o-border-radius: .4em;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    display: flex;
+
+    --opacity:0;
+    --pointer:none;
+
+    opacity: var(--opacity);
+    pointer-events: var(--pointer);
+    transition: opacity .5s;
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -ms-transition: opacity .5s;
+    -o-transition: opacity .5s;
+}
+
+.modal:target {
+    --opacity:1;
+    --pointer:unset;
+}
+
+.modal_container {
+    margin: auto;
+    background-color: white;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    overflow: hidden;
+    text-align: center;
+    padding: 2.5em 1.5em;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+}
+
+.modal_picture{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 400px;
+    margin-bottom: 2em;
+}
+
+.modal_img {
+    width:100%;
+    display: block;
+}
+
+.modal_title {
+    font-size:2.5rem ;
+    font-weight: 500;
+}
+
+.modal_title--bold {
+    font-weight: 700;
+}
+
+.modal_paragraph{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    line-height: 1.5;
+}
+
+.modal_close {
+    display: inline-block;
+    border: 1px solid;
+    padding: 1em 2em;
+    text-decoration: none;
+    font-weight: 700;
+    color: #333;
+    border-radius: 1.4em;
+    -webkit-border-radius: 1.4em;
+    -moz-border-radius: 1.4em;
+    -ms-border-radius: 1.4em;
+    -o-border-radius: 1.4em;
+}
+
+@media (max-width:600px) {
+    .modal_title {
+        font-size:1.7rem;
+        font-weight: 500;
+    }
+}

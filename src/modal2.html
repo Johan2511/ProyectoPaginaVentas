@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/css/modal2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header id="header" class="header">
+        <a href="#modal" class="cta">Dame click</a>
+    </header>
+    
+    <section id="modal" class="modal">
+        <div class="modal_container">
+            
+            <h2 class="modal_title"> Formulario Crear 
+                <span class="modal_title modal_title--bold">Producto</span>
+            </h2>
+                <figure class="modal_picture">
+                    <img src="/public/img/ilustrations/Ganadores.svg" alt="img" class="modal_img" >
+                </figure>
+
+                <div class="container_form">
+                    <form action="" class="modal_form">
+
+                        <label for="">Sku</label>
+                        <div>
+                            <input type="text" placeholder="Ingrese Sku" name="Sku" required="">
+                        </div>
+
+                        <label for="">Name</label>
+                        <div>
+                            <input type="text" placeholder="Ingrese nombre" name="contraseña" required="" >
+                        </div>
+
+                        <label for="">Price</label>
+                        <div>
+                            <input type="number" placeholder="Ingrese precio" name="precio" required="" >
+                        </div>
+
+                        <label for="">Discount</label>
+                        <div>
+                            <input type="number" placeholder="Ingrese descuento" name="descuento" required="" >
+                        </div>
+
+                        <label for="">Descripcion</label>
+                        <div class="text_area">
+                            <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Descripcion"></textarea>
+                        </div>
+
+                        <label for="">Stock</label>
+                        <div>
+                            <input type="number" placeholder="Ingrese stock" name="stock" required="" >
+                        </div>
+        
+                        <label for="">Status</label>
+                        <div>
+                            <input type="text" placeholder="Ingrese status" name="status" required="" >
+                        </div>
+        
+                        
+                        <div>
+                            <input type="file" placeholder="Ingrese imagen" name="imagen" required="" >
+                        </div>
+        
+                </div>    
+                </form>
+                <div class="button_container">
+
+                    <div class="button_submit">
+                        <button class="button">
+                            <a href="#header" class="modal_close">Enviar</a>
+                        </button>
+                    </div>
+                    <div class="button_submit">
+                        <button class="button">
+                            <a href="#header" class="modal_close">Cancelar</a>
+                        </button>
+                    </div>
+                </div>
+               
+            
+            
+        </div>
+    </section>
+</body>
+</html>
